@@ -8,7 +8,6 @@ class User < ApplicationRecord
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :address, presence: true
-  validates :first_name, presence: true
   validates :email, uniqueness: true
   validates :phone_number, :presence => {:message => 'Numéro de téléphone invalide'},
   :numericality => true,
