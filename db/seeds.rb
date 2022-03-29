@@ -17,7 +17,7 @@ felix = User.create!(email: "f@gmail.com", password: "azerty", first_name: "Feli
 puts "User ok..."
 
 puts "create estimations"
-e1 = Estimation.create!(thematic: "couverture", description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum", done: true, workforce: 2, term: 3, user_id: felix.id, photo_url: 'https://images.unsplash.com/photo-1504241932178-447c4c934e98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80')
+e1 = Estimation.create!(thematic: "couverture", description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum", status: "en cours", status_payment:"accompte", workforce: 2, term: 3, user_id: felix.id, photo_url: 'https://images.unsplash.com/photo-1504241932178-447c4c934e98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80')
 puts "Estimation ok..."
 
 puts "All is GooooOOOooooOOOod..."
