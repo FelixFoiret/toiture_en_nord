@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2022_03_29_094131) do
   create_table "estimations", force: :cascade do |t|
     t.string "thematic"
     t.string "description"
-    t.boolean "done"
+    t.boolean "done", default: false
     t.integer "workforce"
     t.integer "term"
     t.bigint "user_id", null: false
